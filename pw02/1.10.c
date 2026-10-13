@@ -1,4 +1,3 @@
-#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdint.h>
 
@@ -6,8 +5,7 @@ int main(void) {
     int id;
     unsigned int raw_status;
     float voltage;
-
-    // %x - hex, %o - octal, %f - float
+    
     if (scanf("%x %o %f", &id, &raw_status, &voltage) == 3) {
         uint8_t status = (uint8_t)raw_status;
         uint16_t checksum = (uint16_t)(id + status);

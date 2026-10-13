@@ -1,8 +1,6 @@
 #include <stdio.h>
 
-int main9(void) {
-    // Выводим START, возвращаем курсор назад управляющим символом '\b' 
-    // и затираем/переписываем поверх слово STOP, в конце издаем звуковой сигнал '\a'
+int main(void) {
     printf("START\b\b\bOP \a\n");
     return 0;
 }

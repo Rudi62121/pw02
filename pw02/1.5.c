@@ -1,9 +1,7 @@
-#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdint.h>
 
-int main5(void) {
-    // Вычисления делаем в unsigned long long (ull) или long long (ll) для предотвращения переполнения
+int main(void) {
     printf("INT8: size=%d, min=%d, max=%d, values=%llu\n",
         (int)sizeof(int8_t), INT8_MIN, INT8_MAX, (unsigned long long)(INT8_MAX - INT8_MIN) + 1);
     printf("UINT8: size=%d, min=%d, max=%d, values=%llu\n",
